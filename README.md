@@ -1,6 +1,5 @@
 # Music Player Application
 
-![Music Player](https://example.com/img/Home.png)
 ![Music Player](/img/Home.png)
 
 ## Table of Contents
