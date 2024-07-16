@@ -2,6 +2,8 @@
 
 ![Music Player](/img/Home.png)
 
+![Music Player](/img/Home2.png)
+
 ## Table of Contents
 
 - [Objective](#objective)
