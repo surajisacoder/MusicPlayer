@@ -1,6 +1,6 @@
 # Music Player Application
 
-![Music Player Screenshot](https://example.com/img/Home.png)
+![Music Player](https://example.com/img/Home.png)
 
 ## Table of Contents
 
