@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif; 
-    background-color:lightcyan;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightcyan;
     user-select: none;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
 /* Theme Toggler */
-#toggle-switch{
+#toggle-switch {
     display: flex;
     justify-content: end;
     position: relative;
@@ -60,9 +60,9 @@ body::-webkit-scrollbar{
     border-radius: 50%;
 }
 
-#toggle-switch input:checked + .slider{
+#toggle-switch input:checked+.slider {
     background-color: black;
-}  
+}
 
 #toggle-switch input:checked+.slider:before {
     background-color: grey;
@@ -72,21 +72,21 @@ body::-webkit-scrollbar{
 }
 
 /* Header */
-header h1{
+header h1 {
     text-align: center;
 }
 
 /* Filter */
-#filter{
+#filter {
     padding-top: 25px;
 }
 
-#filter label{
+#filter label {
     font-size: 20px;
     margin-left: 10px;
 }
 
-#filter-selection{
+#filter-selection {
     height: 30px;
     width: 100px;
     font-size: 15px;
@@ -95,41 +95,41 @@ header h1{
 }
 
 /* Song Queue */
-#all-song{
+#all-song {
     width: 25vw;
-    height:  auto;
+    height: auto;
     margin-bottom: 20px;
     margin-left: 20px;
     padding-bottom: 10px;
 }
 
-#all-song h2{
+#all-song h2 {
     margin-left: 10px;
     margin-bottom: 10px;
 }
 
-#all-song .song-queue{
+#all-song .song-queue {
     margin-left: 10px;
 }
 
-#song-search-bar{
+#song-search-bar {
     height: 30px;
     margin-left: 10px;
     border-radius: 5px;
     box-shadow: none;
 }
 
-#song-search-btn{
+#song-search-btn {
     font-size: 14px;
     margin: 0;
 }
 
-.close-btn{
-    background-color: red; 
+.close-btn {
+    background-color: red;
     box-shadow: none;
     border: 0px;
     color: white;
-    padding: 7px; 
+    padding: 7px;
     border-radius: 5px;
     margin: 0;
     position: relative;
@@ -138,7 +138,7 @@ header h1{
 }
 
 /* Song */
-.song{
+.song {
     position: relative;
     background-color: #0b81bc;
     width: 80%;
@@ -151,13 +151,13 @@ header h1{
     margin-top: 10px;
 }
 
-.song:hover{
+.song:hover {
     cursor: pointer;
     background-color: #03557e;
 }
 
 /* Song Card */
-#song-card{
+#song-card {
     display: flex;
     flex-direction: column;
     width: 40vw;
@@ -171,7 +171,7 @@ header h1{
     font-family: 'Poppins', sans-serif;
 }
 
-.song-info-container{
+.song-info-container {
     background-color: #0573ab;
     height: 60%;
     width: 90%;
@@ -182,7 +182,7 @@ header h1{
     box-shadow: -1px -1px 5px 0.1px purple;
 }
 
-.song-info-container .song-name{
+.song-info-container .song-name {
     margin-left: 27px;
     margin-bottom: 10px;
 }
@@ -192,7 +192,7 @@ header h1{
     margin-top: 10px;
 }
 
-.img-container{
+.img-container {
     width: 90%;
     height: 70%;
     border: 2px solid black;
@@ -203,21 +203,21 @@ header h1{
     align-items: center;
 }
 
-.img-container img{
+.img-container img {
     width: 100%;
     height: 80%;
 }
 
-.audio-player{
+.audio-player {
     text-align: center;
 }
 
-.control-container{
+.control-container {
     display: flex;
     justify-content: center;
 }
 
-.btn{
+.btn {
     padding: 10px;
     font-size: 20px;
     background-color: blue;
@@ -227,63 +227,63 @@ header h1{
     color: white;
 }
 
-#playlist-btn{
+#playlist-btn {
     width: 50%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     background-color: rgb(238, 86, 238);
     transition: 0.5s;
 }
 
-main{
-    display:flex;
+main {
+    display: flex;
     justify-content: space-between;
 }
 
-.card{
+.card {
     background-color: #6bb7de;
     border-radius: 10px;
     box-shadow: -1px -1px 5px 0.1px purple;
 }
 
-.height{
+.height {
     height: 100vh;
-    
+
 }
 
 /* Playlist */
-.playlist-container{
-    height:100%;
+.playlist-container {
+    height: 100%;
     width: 25vw;
     padding-left: 10px;
     padding-top: 10px;
     margin-left: 10px;
 }
 
-.playlist-container h3{
+.playlist-container h3 {
     margin: 15px 0px 15px 0px;
     font-size: 22px;
 }
 
-.search-bar{
+.search-bar {
     height: 40px;
     border-radius: 5px;
     font-size: 15px;
 }
 
-#playlist{
+#playlist {
     height: 100vh;
     overflow: hidden;
     margin-top: -10PX;
     border-radius: 10px;
 }
 
-.playlist{
+.playlist {
     background-color: #0b81bc;
     width: 80%;
     padding: 5px;
@@ -311,7 +311,7 @@ main{
     color: white;
 }
 
-.delete-btn:hover{
+.delete-btn:hover {
     cursor: pointer;
 }
 
@@ -327,10 +327,11 @@ main{
     margin: 0;
 }
 
-#prev{
+#prev {
     margin-right: 20px;
 }
 
-#prev , #next {
+#prev,
+#next {
     width: 7vw;
 }
