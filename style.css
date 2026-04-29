@@ -121,7 +121,7 @@ header h1 {
 
 #song-search-btn {
     font-size: 14px;
-    margin: 0;
+    margin: 10;
 }
 
 .close-btn {
@@ -276,13 +276,6 @@ main {
     font-size: 15px;
 }
 
-#playlist {
-    height: 100vh;
-    overflow: hidden;
-    margin-top: -10PX;
-    border-radius: 10px;
-}
-
 .playlist {
     background-color: #0b81bc;
     width: 80%;
@@ -335,3 +328,172 @@ main {
 #next {
     width: 7vw;
 }
+
+
+/* ---------- Responsive CSS: add at bottom of style.css ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: clamp(22px, 4vw, 38px) !important;
+  word-break: break-word;
+}
+
+main {
+  gap: 20px;
+  padding: 0 20px 20px;
+}
+
+.card,
+.playlist-container,
+.song-info-container {
+  max-width: 100%;
+}
+
+.song,
+.playlist {
+  width: 95%;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 240px;
+}
+
+.audio-controls {
+  width: 90%;
+}
+
+.song-img {
+  object-fit: cover;
+}
+
+#song-card {
+  height: auto;
+  min-height: 100vh;
+}
+
+.height,
+#playlist,
+.playlist-container {
+  height: auto;
+  min-height: 100vh;
+}
+
+#prev,
+#next {
+  width: auto;
+  min-width: 70px;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #all-song,
+  #song-card,
+  #playlist {
+    width: 45%;
+    margin: 0;
+  }
+
+  #song-card {
+    order: 1;
+  }
+
+  #all-song {
+    order: 2;
+  }
+
+  #playlist {
+    order: 3;
+    width: 95%;
+  }
+
+  .playlist-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    padding: 0 12px 20px;
+  }
+
+  #all-song,
+  #song-card,
+  #playlist,
+  .playlist-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .height,
+  #song-card,
+  #playlist,
+  .playlist-container {
+    min-height: auto;
+  }
+
+  .song-info-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  .img-container {
+    height: auto;
+  }
+
+  .img-container img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .song-search,
+  .playlist-search,
+  .search-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-right: 10px;
+  }
+
+  .search-bar {
+    flex: 1 1 180px;
+    max-width: none;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  #playlist-btn {
+    width: 90%;
+  }
+
+  .switch {
+    width: 60px;
+    height: 34px;
+  }
+
+  #toggle-switch .slider:before {
+    height: 26px;
+    width: 26px;
+  }
+
+  #toggle-switch input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+}
+
