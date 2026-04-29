@@ -189,6 +189,10 @@ searchSongEle.addEventListener("submit", (event) => {
   event.preventDefault();
   const searchBarEle = document.querySelector("#song-search-bar");
   const searchedSong = searchBarEle.value;
+  if (!searchedSong) {
+    alert("Enter your song");
+    return;
+  }
   const songQueue = Array.from(songQueueEle.children);
   songFoundEle = songQueue.find((songEle) => {
     return songEle.textContent.toLowerCase() === searchedSong.toLowerCase();
@@ -293,6 +297,10 @@ formEle.addEventListener("submit", createPlayList);
 function createPlayList(event) {
   event.preventDefault();
   const playListName = playlistInputEle.value;
+  if (!playListName) {
+    alert("Enter the playlist name");
+    return;
+  }
   playlistInputEle.text = "";
   playlistInputEle.value = "";
   if (playListName in playList) {
@@ -374,6 +382,11 @@ const clearPlaylistSearchEle = document.querySelector("#playlist-close-btn");
 searchPlaylistEle.addEventListener("submit", (event) => {
   event.preventDefault();
   const searchedPlaylist = searchPlaylistBarEle.value;
+   if (!searchedPlaylist) {
+    alert("Enter your playlist name");
+    return;
+  }
+  
   const PlaylistQueue = Array.from(allPlaylistEle.children);
   playlistFoundEle = PlaylistQueue.find((playListEle) => {
     return playListEle.textContent === searchedPlaylist;
